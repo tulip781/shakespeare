@@ -1,6 +1,9 @@
 @import './navbar/nav.scss';
 @import './holding-page/comingsoon.scss';
+@import './animation/fadeanimation.scss';
 
+$main-color: white;
+$main-font-color: black;
 
 @font-face {
   font-family: 'FavoritPro-Regular';
@@ -10,12 +13,12 @@
 
 body {
   font-family: 'FavoritPro-Regular';
-  background-color: #b4ada8;
+  background-color: $main-color;
   margin: 20px 80px;
 }
 
-.purple {
-  color: #ba1860;
+.font-color {
+  color: $main-font-color;
   font-family: 'FavoritPro-Regular';
 }
 
