@@ -16,7 +16,8 @@ module.exports = {
       title: "Webpack demo",
       hash: true,
       filename: 'index.html',
-      template: './src/index.html'
+      template: './src/index.html',
+      favicon: './src/img/favicon.ico',
     }),
     new CleanWebpackPlugin(),
   ],
@@ -44,7 +45,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|ico)$/,
         use: [
           'file-loader',
         ],
