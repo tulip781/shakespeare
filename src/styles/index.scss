@@ -1,9 +1,12 @@
 @import './navbar/nav.scss';
+@import './navbar/hamburger.scss';
+@import './navbar/popout-sidebar.scss';
 @import './holding-page/comingsoon.scss';
 @import './animation/fadeanimation.scss';
 
 $main-color: white;
 $main-font-color: black;
+
 
 @font-face {
   font-family: 'FavoritPro-Regular';
@@ -14,11 +17,15 @@ $main-font-color: black;
 body {
   font-family: 'FavoritPro-Regular';
   background-color: $main-color;
-  margin: 20px 80px;
 }
 
 .font-color {
   color: $main-font-color;
   font-family: 'FavoritPro-Regular';
 }
+
+.margins {
+  margin: 20px 60px;
+}
+
 

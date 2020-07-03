@@ -1,0 +1,15 @@
+.side-navbar-container {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  background-color: pink;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .side-navbar-container {
+    display: none;
+  }
+}
