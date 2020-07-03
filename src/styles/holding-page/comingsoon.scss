@@ -1,0 +1,15 @@
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.header {
+  font-size: 7.5vw;
+  white-space: nowrap;
+}

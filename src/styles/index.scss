@@ -1,4 +1,6 @@
 @import './navbar/nav.scss';
+@import './holding-page/comingsoon.scss';
+
 
 @font-face {
   font-family: 'FavoritPro-Regular';
@@ -9,6 +11,7 @@
 body {
   font-family: 'FavoritPro-Regular';
   background-color: #b4ada8;
+  margin: 20px 80px;
 }
 
 .purple {
@@ -16,19 +19,3 @@ body {
   font-family: 'FavoritPro-Regular';
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cover {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.header {
-  font-size: 7.5vw;
-  white-space: nowrap;
-}

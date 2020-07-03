@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    list-style: none;
+    padding-left: 0px;
+    li {
+      display: inline;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+  ul > li:first-of-type {
+    margin-left: 0px;
+  }
+}
+
+.web-navbar {
+  display: none;
+}
+.burger-icon {
+  width: 25px;
+}
+
+@media (min-width: 768px) {
+  .burger-icon {
+    width: 25px;
+  }
+  .web-navbar {
+    display: inline;
+  }
+  .mobile-navbar {
+    display: none;
+  }
+}
