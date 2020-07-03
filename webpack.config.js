@@ -1,14 +1,25 @@
-const path = require('path');
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/scripts/app.js',
   output: {
-    filename: 'bundle.js',
+    filename: "bundle.js",
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
     contentBase: './dist',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Webpack demo",
+      hash: true,
+      filename: 'index.html',
+      template: './src/index.html'
+    }),
+    new CleanWebpackPlugin(),
+  ],
   module: {
     rules: [
       {
