@@ -5,13 +5,19 @@
   background-color: pink;
   transform-origin: center right;
   transition: right 1s ease;
+  z-index: 10;
+  ul {
+    list-style: none;
+    cursor: default;
+    li {
+      cursor: pointer;
+    }
+  }
 }
 
 .side-navbar-container.is-active {
   right: 0px;
 }
-
-
 
 @media (min-width: 768px) {
   .side-navbar-container {

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .cover {
@@ -12,4 +13,8 @@
 .header {
   font-size: 7.5vw;
   white-space: nowrap;
+}
+
+.border {
+  border: 1px black solid;
 }
