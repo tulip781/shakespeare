@@ -1,19 +1,24 @@
 const initSplash = () => {
   const splash = document.querySelector('.splash-screen');
-
-
+  const wordone = document.querySelector('.wordone');
+  const wordtwo = document.querySelector('.wordtwo');
   // If not visited page visited before
-  if (sessionStorage.getItem('visited') == 'false') {
-    console.log("splash remove")
+  if (!sessionStorage.getItem('visited')) {
+    console.log("first time visiting the page");
     sessionStorage.setItem('visited', 'false');
     splash.classList.add('is-active');
     setTimeout( () => {
+      wordone.classList.add('is-active');
+    }, 100);
+    setTimeout( () => {
+      wordtwo.classList.add('is-active');
+    }, 1000);
+    setTimeout( () => {
       splash.classList.remove('is-active');
-    }, 3000);
+    }, 2500);
   // If page visited
-  } else {
-    sessionStorage.setItem('visited', 'true');
-    console.log('setting store')
+  } else if (sessionStorage.getItem('visited')) {
+    splash.style.display = 'none';
   }
 }
 

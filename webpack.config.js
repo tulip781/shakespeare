@@ -1,16 +1,23 @@
 var path = require('path');
+const fs = require('fs');
+var package = require('./package.json');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/scripts/app.js',
+  entry: {
+    app: "./src/scripts/app.js",
+    vendor: Object.keys(package.dependencies),
+    otherpages: "./src/scripts/otherpages.js"
+  },
   output: {
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
     contentBase: './dist',
   },
+  watch:true,
   plugins: [
     new HtmlWebpackPlugin({
       title: "Webpack demo",
@@ -18,6 +25,15 @@ module.exports = {
       filename: 'index.html',
       template: './src/index.html',
       favicon: './src/img/favicon.ico',
+      chunks: ['vendor', 'app']
+    }),
+    new HtmlWebpackPlugin({
+      title: "Webpack demo",
+      hash: true,
+      filename: 'about.html',
+      template: './src/about.html',
+      favicon: './src/img/favicon.ico',
+      chunks: ['vendor', 'otherpages']
     }),
     new CleanWebpackPlugin(),
   ],

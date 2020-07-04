@@ -20,6 +20,20 @@ body {
   background-color: $main-color;
   overflow-x: hidden;
   margin: 0px;
+  padding-top: 50px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+body.fade-in{
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+body.fade-out{
+  opacity: 0;
+  transition: opacity 1s ease;
+
 }
 
 .font-color {
@@ -30,5 +44,8 @@ body {
 .margins {
   margin: 20px 60px;
 }
+
+
+
 
 

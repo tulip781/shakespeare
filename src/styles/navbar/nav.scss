@@ -17,6 +17,13 @@ header {
       display: inline;
       margin-left: 20px;
       cursor: pointer;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    li:hover {
+      text-decoration: underline;
     }
   }
   ul > li:first-of-type {

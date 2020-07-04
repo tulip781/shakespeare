@@ -4,6 +4,8 @@ const initNavBarMovement = () => {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.querySelector(".navbar-wrapper").style.top = "0";
+    } else if (prevScrollpos == currentScrollPos) {
+      document.querySelector(".navbar-wrapper").style.top = "0";
     } else {
       document.querySelector(".navbar-wrapper").style.top = "-55px";
     }
