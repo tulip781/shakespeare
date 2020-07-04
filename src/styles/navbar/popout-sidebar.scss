@@ -12,6 +12,13 @@
     cursor: default;
     li {
       cursor: pointer;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    li:hover {
+      text-decoration: underline;
     }
   }
 }
