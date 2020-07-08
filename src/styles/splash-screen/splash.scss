@@ -1,5 +1,5 @@
 .splash-screen {
-  background-color: pink;
+  background-color: #FF4401;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -16,7 +16,7 @@
 }
 
 .splash-screen.is-active {
-  background-color: pink;
+  background-color: #FF4401;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -36,6 +36,7 @@
 
 .wordtwo.is-active, .wordone.is-active {
   opacity:1 ;
+  color: #FF8722;
   transform: translate(0px,0px);
   transition: opacity 1s ease, transform 1s ease;
 }

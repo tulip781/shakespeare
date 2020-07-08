@@ -4,8 +4,8 @@ import { sideNavScript } from './sidenavigation.js';
 import { initSplash } from './splashScreen.js';
 import { initNavBarMovement } from './navbar_movement.js';
 import { initPageTransition } from './body_fade_transition';
-import '../fonts/FavoritPro-Regular.otf';
-
+import { shakeInit } from './shakespearapi';
+import '../fonts/FKRasterGrotesk-Rounded.otf';
 
 
 fadeCssAnimation();
@@ -13,3 +13,4 @@ sideNavScript();
 initSplash();
 initNavBarMovement();
 initPageTransition();
+shakeInit();
