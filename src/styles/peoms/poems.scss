@@ -6,12 +6,28 @@
   align-items: center;
   font-size: 100px;
   text-align: justify;
-
+  cursor: pointer;
 }
 
 .image {
   position: absolute;
   right: 50%;
   top: 50%;
-  background-image: url ('../img/Rom.jpg');
+  transform: translate(50%, -50%);
+  width: 200px;
+}
+
+@media (max-width: 368px) {
+  .image {
+    width: 60%;
+    padding: 10px;
+    position: absolute;
+    margin: auto;
+  }
+}
+
+.about-overlay {
+  position: absolute;
+  z-index: 10;
+  color: white;
 }
